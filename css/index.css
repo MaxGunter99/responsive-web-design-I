@@ -137,7 +137,9 @@ h1, h2, h3, h4, h5 {
         color: grey;
         border: 1px solid grey;
         padding: 10px;
-        margin: 0 auto;
+        margin: 0;
+        display: flex;
+        justify-content: center;
 
     }
 }
@@ -159,7 +161,7 @@ h1, h2, h3, h4, h5 {
         font-size: 14px;
         color: gray;
         text-decoration: none;
-}
+    }
 }
 
 header nav a:hover {
@@ -218,19 +220,6 @@ header nav .logo {
     }
 }
 
-/* @media ( min-width: 800px ) {
-    .bigintro .text .button {
-        padding: 15px;
-        color: black;
-        border: 1px solid black;
-        background: white;
-        vertical-align: top;
-        font-size: 20px;
-        cursor: pointer; 
-        text-align: center;
-    }
-} */
-
 @media ( max-width: 800px ) {
     .bigintro .text {
         font-size: 77px;
@@ -254,7 +243,8 @@ header nav .logo {
         font-size: 20px;
         display: flex;
         flex-direction: column;
-        
+        line-height: 20px;
+        padding: 20px;
     }
 }
 
@@ -289,6 +279,7 @@ header nav .logo {
         padding: 0 10px;
         display: flex;
         flex-direction: row;
+        padding: 10px;
     }
 }
 
@@ -298,6 +289,7 @@ header nav .logo {
         width: 410px;
         display: inline-block;
         margin-right: 34px;
+        line-height: 20px;
     }
 
 }
@@ -320,18 +312,26 @@ header nav .logo {
     .content-section .bottom-content {
         margin-top: 37px;
         padding: 0 10px;
-     display: flex;
-     flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        line-height: 20px;
     }
 
 }
 
+@media ( max-width: 500px ) {
+    .content-section .bottom-content .text-content {
+        line-height: 20px;
+        padding: 10px;
+    }
+}
 
 @media ( min-width: 500px ) {
     .content-section .bottom-content .text-content {
         width: 275px;
         display: inline-block;
         margin-right: 12px;
+        line-height: 20px;
     }
 }
 
